@@ -19,4 +19,4 @@ for line in sys.stdin.readlines():
     s = line.split()
     character = s[0]
     count = int(s[1])//2
-    print(character, '#'*count)
+    sys.stdout.write('{} {}\n'.format(character, '#'*count) )

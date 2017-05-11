@@ -24,4 +24,4 @@ s = [x.lower() for x in s if x.isalpha()]
 
 # print result
 for (character, count) in Counter(s).most_common(10):
-    print(character, count)
+    sys.stdout.write( '{} {}\n'.format(character, count))
