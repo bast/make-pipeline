@@ -25,7 +25,8 @@ $ make [-jN]
 
 ```makefile
 SRCS = $(wildcard data/*.in)
-OBJS = $(patsubst %.in,%.out,$(SRCS))
+OBJS = $(patsubst %.in,%.tmp,$(SRCS))
+OBJS += $(patsubst %.in,%.out,$(SRCS))
 
 all: $(OBJS)
 
